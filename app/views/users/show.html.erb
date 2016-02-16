@@ -1,0 +1,10 @@
+<p><a href="/bright_ideas">Bright Ideas</a>| <a href="/logout">Logout</a></p>
+
+Name: <%= @user.name %><br>
+Alias: <%= @user.alias %><br>
+Email: <%= @user.email %>
+
+<hr>
+
+Total Number of Ideas: <%= @user.ideas.count %><br>
+Total Number of Likes: <%= @user.likes.count %>

@@ -1,0 +1,16 @@
+<h1>Register</h1>
+
+<form action="/users" method="post">
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+    <label for="name">Name: </label>
+    <input type="text" id="name" type="text" name="user[name]">
+    <label for="alias"> Alias:</label>
+    <input type="text" id="alias" name="user[alias]">
+    <label for="email">Email: </label>
+    <input id="email" type="email" name="user[email]">
+    <label for="Password">Password: </label>
+    <input id="password" type="password" name="user[password]">
+    <label for="password_confirmation">Password Confirmation: </label>
+    <input id="password_confirmation" type="password" name="user[password_confirmation]">
+  <button type="submit">Register</button>
+</form>

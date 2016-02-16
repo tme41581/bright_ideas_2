@@ -1,0 +1,9 @@
+<% if flash[:errors].present? %>
+	<% for error in flash[:errors] %>
+  <p><%= error %></p>
+ 	<% end %>
+<% end %>
+
+<% if flash[:success].present? %>
+  <p><%= flash[:success] %></p>
+<% end %>
